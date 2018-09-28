@@ -97,13 +97,7 @@ config.codekit
 /min
 
 ### Custom ###
-build/*
-build/css/styles.css
-build/js/app.js
 
-src/css/*.css
-src/js/*.js
-!src/js/jquery.min.js
 
 defaults.json
 ftp_config.json
