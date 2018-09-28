@@ -1,0 +1,12 @@
+a,
+p,
+span {
+    color: $text-black;
+}
+
+a {
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}

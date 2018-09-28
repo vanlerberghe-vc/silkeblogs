@@ -1,0 +1,54 @@
+*,
+html {
+    font-size: 10px;
+    color: $text-black;
+    @include OverpassRegular();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+//REMOVE AFTER
+body {
+    //min-height: 3000px;
+    //background: linear-gradient(180deg,#FFF, #fcf7f4);
+}
+
+.socials {
+    
+    li {
+        display: inline-block;
+
+        a {
+            
+            &:hover {
+
+                i {
+                    color: $accent1;
+                }
+            }
+        }
+    }
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

@@ -1,0 +1,242 @@
+.card-section {
+    margin-top: 30px;
+    padding: 20px 0;
+
+    &.featured {
+        margin-top: 0;
+        padding: 75px 0 15px 0;
+        background: linear-gradient(60deg,#ffe8d9,#ffcdcc);
+    }
+
+    .card-section__title {
+        display: inline-block;
+        font-size: 24px;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        @include OverpassLight();
+    }
+}
+
+.card {
+    margin-top: 30px;
+    flex-basis: 0;
+    flex-grow: 1;
+    
+
+    &.card-featured {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        border: none;
+
+        &:hover {
+            cursor: initial;
+
+            .card-information {
+
+                .card-title {
+
+                    a {
+                        background: none;
+                    }
+                }
+            }
+        }
+
+        .card-image {
+
+            .spacer {
+                padding-top: 75%;
+            }
+        }
+
+        .card-information {
+            padding: 30px 15px;
+            background: #fff;
+
+            .card-title {
+                padding-bottom: 20px;
+
+                a {
+                    font-size: 3rem;
+                    line-height: 3.2rem;
+                    letter-spacing: .1rem;
+                    @include ChivoNormal();
+                }
+                
+            }
+        }
+
+        .read-more {
+            font-size: 1.6rem;
+        }
+    }
+    
+    &:hover {
+        cursor: pointer;
+        
+
+        .card-information {
+
+            .card-title {
+
+                a {
+                    background-image: linear-gradient(180deg,$accent2,$accent2);
+                    background-repeat: no-repeat;
+                    background-position: 0 15px;
+                    background-size: 100% 10px;
+                }
+
+                
+            }
+        }
+    }
+
+    .card-image {
+        position: relative;
+        height: 300px;
+
+        .spacer {
+            padding-top: 100%;
+            background: #f4f4f4;
+        }
+
+        > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .card-information {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;   
+        padding: 30px 15px;
+        
+
+        .card-category {
+
+            span {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                color: $text_light;
+            }
+        }
+
+        .card-title {
+
+            a {
+                font-size: 2rem;
+                letter-spacing: .1rem;
+                line-height: 2.6rem;
+                margin-bottom: 15px;
+                @include OverpassBold();
+
+                &:hover {
+                    color: initial;
+                }
+            }
+        }
+
+        .card-summary {
+            margin-bottom: 25px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@include sm-and-above {
+    .card-section {
+        margin-top: 70px;
+        padding: 50 15px;
+        
+        &.featured {
+            padding: 90px 30px 30px;
+        }
+    }
+
+    .card {
+        border: none;
+
+        &.card-featured {
+            flex-direction: row;
+
+            .card-image {
+                order: 2;
+                width: 60%;
+                height: auto;
+            }
+
+            .card-information {
+                width: 40%;
+                padding: 40px 30px;
+            }
+        }
+
+        .card-image {
+            width: 100%;
+            height: 225px;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+        }
+    }
+}
+
+@include md-and-above {
+    .card {
+        &.card-featured {
+            height: 450px;
+        }
+    }
+
+    .card-section {
+        margin-top: 20px;
+        padding: 30px 0;
+
+        &.featured {
+            padding: 175px 30px 50px;
+        }
+
+        .card-section__title {
+            font-size: 3rem;
+        }
+
+        .card-row {
+            display: flex;
+            justify-content: space-around;
+    
+            
+    
+            .card {
+                margin-left: 20px;
+    
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                .card-image {
+                    height: 300px;
+                }
+            }
+    
+        }
+    }
+}

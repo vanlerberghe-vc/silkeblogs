@@ -1,0 +1,128 @@
+/* SINGLE SCREEN SIZES */
+
+@mixin xs-only{
+	@media (max-width: $screen-xs-max) {
+  		@content;
+	}
+}
+
+@mixin sm-only{
+	@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  		@content;
+	}
+}
+
+@mixin md-only{
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  		@content;
+	}
+}
+
+@mixin lg-only{
+	@media (min-width: $screen-lg-min) {
+		@content;
+	}
+}
+
+
+/* ONLY VISIBLE ON SAID SCREEN OR LARGER */
+@mixin lg-and-above{
+	@include lg-only{
+		@content;
+	}
+}
+
+
+@mixin md-and-above{
+	@media (min-width: $screen-md-min) {
+  		@content;
+	}
+}
+
+@mixin sm-and-above{
+	@media (min-width: $screen-sm-min) {
+  		@content;
+	}
+}
+
+
+
+/* ONLY VISIBLE ON SAID SCREEN AND BELOW */
+@mixin lg-and-below{
+	@media (max-width: $screen-lg-max) {
+  		@content;
+	}
+}
+
+
+@mixin md-and-below{
+	@media (max-width: $screen-md-max) {
+  		@content;
+	}
+}
+
+@mixin sm-and-below{
+	@media (max-width: $screen-sm-max) {
+  		@content;
+	}
+}
+
+
+
+/*  OR CUSTOM SIZES IF YOU REEEEEALLLLY NEED THEM */
+@mixin screen-max($max-width){
+	@media (max-width: $max-width) {
+  		@content;
+	}
+}
+
+@mixin screen-min($min-width){
+	@media (min-width: $min-width) {
+  		@content;
+	}
+}
+
+@mixin screen-between($min-width, $max-width){
+	@media (min-width: $min-width) and (max-width: $max-width) {
+  		@content;
+	}
+}
+
+
+
+/* SCREEN DEBUG SETUP. JUST INCLUDE ANYWHERE IN THE ROOT OF YOUR CODE. NO HTML REQUIRED */
+@mixin screen-debug{
+	body:before{
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 5px;
+		font-family: "Helvetica";
+		text-transform: uppercase;
+		color: #ffffff;
+		z-index: 5000000000;
+		display: inline-block;
+
+		@include fontSize(12px);
+
+		@include xs-only{
+			content: "Extra small";
+			background-color: #ff0000;
+		}
+
+		@include sm-only{
+			content: "Small";
+			background-color: #ff9900;
+		}
+
+		@include md-only{
+			content: "Medium";
+			background-color: #a5be41;
+		}
+
+		@include lg-only{
+			content: "Large";
+			background-color: #009900;
+		}
+	}
+}

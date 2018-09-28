@@ -1,0 +1,18 @@
+{
+  "name": "silkeblogs",
+  "description": "The best project ever.",
+  "version": "1.0.0",
+  "licenses": [],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-google-fonts": "^0.5.0",
+    "grunt-sass": "^1.1.0-beta"
+  },
+  "keywords": []
+}
