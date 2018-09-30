@@ -1,9 +1,18 @@
 .category {
     padding: 90px 0;
 
-    h1.category__title {
+    .category__title {
         text-transform: uppercase;
         font-size: 2.2rem;
+    }
+
+    .category__posts {
+
+        .card-section {
+
+            margin-top: 0;
+            padding-top: 0;
+        }
     }
 }
 
@@ -24,6 +33,17 @@
 
         h1.category__title {
             font-size: 4rem;
+        }
+
+        .category__posts {
+
+            .card-section {
+    
+                .card-row {
+    
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 }

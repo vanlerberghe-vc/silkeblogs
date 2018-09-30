@@ -3,59 +3,80 @@ footer {
     background-color: $accent2;
     border-top: 1px solid #eee;
 
-    padding: 20px 0;
-    
+    padding-top: 40px;
+
+    .footer__content {
+        text-align: center;
+    }
+
     .footer__logo {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footer__nav {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $text_black;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            font-size: 1.6rem;
+        }
     }
 
     .footer__socials {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
+        margin-top: 30px;
 
         li {
-            margin-left: 10px;
+            margin-left: 15px;
 
             &:first-child {
                 margin-left: 0;
             }
+        }
 
-            a {
+        a {
 
-                &:hover {
+            i {
+                font-size: 2.2rem;
+            }
 
-                    i {
-                        color: $text_black;
-                    }
+            &:hover {
+                i {
+                    color: $primary;
                 }
             }
-        }
-
-        [class^="icon-"] {
-
-            font-size: 20px;
-        }
-    }
-
-    .footer__nav {
-        text-align: center;
-        margin-bottom: 40px;
-
-        li {
-            margin-bottom: 10px;
-
-            a {
-                font-size: 1.6rem;
-            }
+            
         }
     }
 
     .footer__copy {
-        display: inline-block;
-        width: 100%;
+        margin-top: 40px;
+        padding: 15px 0;
         text-align: center;
+        background-color: $primary;
+        position: relative;
+
+        span {
+            font-size: 1.2rem;
+        }
+
+        img.loveyou {
+            position: absolute;
+            right: 20px;
+            bottom: 50%;
+            transform: translateY(50%);
+            width: 15px;
+            height: 15px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 
 }
@@ -63,21 +84,27 @@ footer {
 @include sm-and-above {
 
     footer {
-        padding: 40px 0;
 
-        .footer__nav {
-            text-align: right;
-        }
-
-        .footer__socials {
-            text-align: right;
-            margin-top: 40px;
-
-            
+        .footer__content {
+        
         }
     }
+   
 }
 
 @include md-and-above {
+
+    footer {
+
+        padding-top: 80px;
+
+        .footer__content {
+        
+        }
+
+        .footer__copy {
+            margin-top: 80px;
+        }
+    }
 
 }
