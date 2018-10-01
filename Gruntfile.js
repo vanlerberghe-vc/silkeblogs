@@ -130,6 +130,18 @@ module.exports = function(grunt) {
 							styles: [
 								300, 400, 700
 							]
+						},
+						{
+							family: 'Lato',
+							styles: [
+								300, 400, 700
+							]
+						},
+						{
+							family: 'Raleway',
+							styles: [
+								300, 400, 700
+							]
 						}
 					]
 				}

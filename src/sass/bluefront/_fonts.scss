@@ -50,6 +50,38 @@
 	src: url('../assets/fonts/overpass-700-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/overpass-700-normal.woff') format('woff'), url('../assets/fonts/overpass-700-normal.svg#Lato') format('svg');
 }
 
+@font-face {
+	font-family: 'LatoLight';
+	src: url('../assets/fonts/lato-300-normal.eot');
+	src: url('../assets/fonts/lato-300-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/lato-300-normal.woff') format('woff'), url('../assets/fonts/lato-300-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'LatoRegular';
+	src: url('../assets/fonts/lato-400-normal.eot');
+	src: url('../assets/fonts/lato-400-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/lato-400-normal.woff') format('woff'), url('../assets/fonts/lato-400-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'LatoBold';
+	src: url('../assets/fonts/lato-700-normal.eot');
+	src: url('../assets/fonts/lato-700-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/lato-700-normal.woff') format('woff'), url('../assets/fonts/lato-700-normal.svg#Lato') format('svg');
+}
+
+@font-face {
+	font-family: 'RalewayLight';
+	src: url('../assets/fonts/raleway-300-normal.eot');
+	src: url('../assets/fonts/raleway-300-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/raleway-300-normal.woff') format('woff'), url('../assets/fonts/raleway-300-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'RalewayRegular';
+	src: url('../assets/fonts/raleway-400-normal.eot');
+	src: url('../assets/fonts/raleway-400-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/raleway-400-normal.woff') format('woff'), url('../assets/fonts/raleway-400-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'RalewayBold';
+	src: url('../assets/fonts/raleway-700-normal.eot');
+	src: url('../assets/fonts/raleway-700-normal.eot#iefix') format('embedded-opentype'), url('../assets/fonts/raleway-700-normal.woff') format('woff'), url('../assets/fonts/raleway-700-normal.svg#Lato') format('svg');
+}
+
 
 
 @mixin ChivoNormal() {
@@ -68,6 +100,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
+
 @mixin OverpassLight() {
   font-family: 'OverpassLight';
   font-weight: 300;
@@ -82,6 +115,44 @@
 
 @mixin OverpassBold() {
   font-family: 'OverpassBold';
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+@mixin LatoLight() {
+  font-family: 'LatoLight';
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin LatoRegular() {
+  font-family: 'LatoRegular';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin LatoBold() {
+  font-family: 'LatoBold';
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+@mixin RalewayLight() {
+  font-family: 'RalewayLight';
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin RalewayRegular() {
+  font-family: 'RalewayRegular';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin RalewayBold() {
+  font-family: 'RalewayBold';
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }

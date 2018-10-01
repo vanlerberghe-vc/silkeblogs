@@ -2,27 +2,69 @@
 	font-family: 'Chivo';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../src/assets/fonts/chivo-400-normal.eot');
-	src: local('Chivo Regular'), local('Chivo-Regular'), url('../src/assets/fonts/chivo-400-normal.eot#iefix') format('embedded-opentype'), url('../src/assets/fonts/chivo-400-normal.woff') format('woff'), url('../src/assets/fonts/chivo-400-normal.svg#Chivo') format('svg');
+	src: url('src/assets/fonts/chivo-400-normal.eot');
+	src: url('src/assets/fonts/chivo-400-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/chivo-400-normal.woff') format('woff'), url('src/assets/fonts/chivo-400-normal.svg#Chivo') format('svg');
 }
 @font-face {
 	font-family: 'Overpass';
 	font-style: normal;
 	font-weight: 300;
-	src: url('../src/assets/fonts/overpass-300-normal.eot');
-	src: local('Overpass Light'), local('Overpass-Light'), url('../src/assets/fonts/overpass-300-normal.eot#iefix') format('embedded-opentype'), url('../src/assets/fonts/overpass-300-normal.woff') format('woff'), url('../src/assets/fonts/overpass-300-normal.svg#Overpass') format('svg');
+	src: url('src/assets/fonts/overpass-300-normal.eot');
+	src: url('src/assets/fonts/overpass-300-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/overpass-300-normal.woff') format('woff'), url('src/assets/fonts/overpass-300-normal.svg#Overpass') format('svg');
 }
 @font-face {
 	font-family: 'Overpass';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../src/assets/fonts/overpass-400-normal.eot');
-	src: local('Overpass Regular'), local('Overpass-Regular'), url('../src/assets/fonts/overpass-400-normal.eot#iefix') format('embedded-opentype'), url('../src/assets/fonts/overpass-400-normal.woff') format('woff'), url('../src/assets/fonts/overpass-400-normal.svg#Overpass') format('svg');
+	src: url('src/assets/fonts/overpass-400-normal.eot');
+	src: url('src/assets/fonts/overpass-400-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/overpass-400-normal.woff') format('woff'), url('src/assets/fonts/overpass-400-normal.svg#Overpass') format('svg');
 }
 @font-face {
 	font-family: 'Overpass';
 	font-style: normal;
 	font-weight: 700;
-	src: url('../src/assets/fonts/overpass-700-normal.eot');
-	src: local('Overpass Bold'), local('Overpass-Bold'), url('../src/assets/fonts/overpass-700-normal.eot#iefix') format('embedded-opentype'), url('../src/assets/fonts/overpass-700-normal.woff') format('woff'), url('../src/assets/fonts/overpass-700-normal.svg#Overpass') format('svg');
+	src: url('src/assets/fonts/overpass-700-normal.eot');
+	src: url('src/assets/fonts/overpass-700-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/overpass-700-normal.woff') format('woff'), url('src/assets/fonts/overpass-700-normal.svg#Overpass') format('svg');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	src: url('src/assets/fonts/lato-300-normal.eot');
+	src: url('src/assets/fonts/lato-300-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/lato-300-normal.woff') format('woff'), url('src/assets/fonts/lato-300-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('src/assets/fonts/lato-400-normal.eot');
+	src: local('Lato Regular'), local('Lato-Regular'), url('src/assets/fonts/lato-400-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/lato-400-normal.woff') format('woff'), url('src/assets/fonts/lato-400-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	src: url('src/assets/fonts/lato-700-normal.eot');
+	src: url('src/assets/fonts/lato-700-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/lato-700-normal.woff') format('woff'), url('src/assets/fonts/lato-700-normal.svg#Lato') format('svg');
+}
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 300;
+	src: url('src/assets/fonts/raleway-300-normal.eot');
+	src: url('src/assets/fonts/raleway-300-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/raleway-300-normal.woff') format('woff'), url('src/assets/fonts/raleway-300-normal.svg#Raleway') format('svg');
+}
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: url('src/assets/fonts/raleway-400-normal.eot');
+	src: local('Raleway'), local('Raleway-Regular'), url('src/assets/fonts/raleway-400-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/raleway-400-normal.woff') format('woff'), url('src/assets/fonts/raleway-400-normal.svg#Raleway') format('svg');
+}
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	src: url('src/assets/fonts/raleway-700-normal.eot');
+	src: url('src/assets/fonts/raleway-700-normal.eot#iefix') format('embedded-opentype'), url('src/assets/fonts/raleway-700-normal.woff') format('woff'), url('src/assets/fonts/raleway-700-normal.svg#Raleway') format('svg');
 }
